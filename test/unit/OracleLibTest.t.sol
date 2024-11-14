@@ -2,11 +2,11 @@
 
 pragma solidity ^0.8.19;
 
-import { MockV3Aggregator } from "../mocks/MockV3Aggregator.sol";
+import {MockV3Aggregator} from "../mocks/MockV3Aggregator.sol";
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
-import { Test, console } from "forge-std/Test.sol";
-import { StdCheats } from "forge-std/StdCheats.sol";
-import { OracleLib} from "src/Libraries/OracleLib.sol";
+import {Test, console} from "forge-std/Test.sol";
+import {StdCheats} from "forge-std/StdCheats.sol";
+import {OracleLib} from "src/Libraries/OracleLib.sol";
 
 contract OracleLibTest is StdCheats, Test {
     using OracleLib for AggregatorV3Interface;
